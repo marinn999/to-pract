@@ -1,0 +1,27 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+p, h2 {
+    margin: 0;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.products-item {
+    border: 1px solid black;
+    flex-basis: calc((100% - 46px) / 3);
+cursor: pointer;
+&:hover {
+    transform: scale(1.05);
+}
+}
