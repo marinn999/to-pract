@@ -2157,3 +2157,278 @@
 // const elapsedTime = endTime - startTime;
 
 // console.log(`Elapsed time: ${elapsedTime} ms`);
+
+// Дана строка. Выведите в консоль последний символ строки.
+// const string = 'lorem ipsum lololou';
+// console.log(string[string.length - 1]);
+
+// Дано число.Проверьте, четное оно или нет.
+// const numb = 7;
+// numb % 2 === 0 ? console.log(true) : console.log(false);
+
+// Даны два слова. Проверьте, что первые буквы этих слов совпадают.
+// const first = 'opa';
+// const second = 'soma';
+// first[0] === second[0] ? console.log('yep') : console.log('nope');
+
+// Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.
+
+// const word = 'somewordь';
+// word[word.length - 1] === 'ь'
+//   ? console.log(word[word.length - 2])
+//   : console.log(word[word.length - 1]);
+
+// Дано число. Выведите в консоль первую цифру этого числа.
+
+// const numb = 67;
+// console.log(numb.toString()[0]);
+
+// Дано число.Выведите в консоль последнюю цифру этого числа.
+
+// const numb = 789;
+// console.log(numb.toString()[numb.toString().length - 1]);
+
+// Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
+
+// const numb = 1234;
+// const sum =
+//   Number(numb.toString()[0]) +
+//   Number(numb.toString()[numb.toString().length - 1]);
+// console.log(sum);
+
+// Дано число.Выведите количество цифр в этом числе.
+// const numb = 1234567890;
+// console.log(numb.toString().length);
+
+// Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+// const first = 1234567890;
+// const second = 1987654321;
+// first.toString()[0] === second.toString()[0]
+//   ? console.log('yep')
+//   : console.log('nope');
+
+// Дана строка.Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.
+// const string = 'lorem ipsum lalalap';
+// string.length > 1 ? console.log(string[string.length - 2]) : console.log('nea');
+
+// Даны два целых числа. Проверьте, что первое число без остатка делится на второе.
+// const first = 24;
+// const second = 7;
+// first % second === 0 ? console.log(true) : console.log('ne');
+
+// Выведите в консоль все целые числа от 1 до 100.
+
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i);
+// }
+
+// Выведите в консоль все целые числа от -100 до 0.
+// for (let i = -100; i < 0; i++) {
+//   console.log(i);
+// }
+
+// Выведите в консоль все четные числа из промежутка от 1 до 100.
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+// Найдите сумму всех целых чисел от 1 до 100.
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   sum += i;
+//   console.log(sum);
+// }
+
+// Найдите сумму всех целых четных чисел в промежутке от 1 до 100.
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     sum += i;
+//     console.log(sum);
+//   }
+// }
+// Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 !== 0) {
+//     sum += i;
+//     console.log(sum);
+//   }
+// }
+// Даны два целых числа. Найдите остаток от деления первого числа на второе.
+// const first = 5;
+// const second = 2;
+// const diff = first % second;
+// console.log(diff);
+
+// Дана некоторая строка.Переберите и выведите в консоль по очереди все символы с конца строки.
+// const stringo = words => {
+//   const arr = words.split('');
+
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+//   }
+// };
+// stringo('asdfghjkl');
+
+// Дан массив с числами. Найдите сумму квадратов элементов этого массива.
+// const func = arr => {
+//   let sum = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     sum += arr[i] ** 2;
+//   }
+//   console.log(sum);
+// };
+// func([1, 2, 3]);
+
+// Дан массив с числами. Найдите сумму квадратных корней элементов этого массива.
+// const func = arr => {
+//   let sum = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     sum += arr[i] ** (1 / 2);
+//   }
+//   console.log(sum);
+// };
+// func([1, 4, 9]);
+
+// Дан массив с числами. Найдите сумму положительных элементов этого массива.
+// const func = arr => {
+//   let sum = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     if (arr[i] > 0) {
+//       sum += arr[i];
+//     }
+//   }
+//   console.log(sum);
+// };
+// func([1, 4, 9, -8, -19]);
+
+// Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти.
+// const func = arr => {
+//   let sum = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     if (arr[i] > 0 && arr[i] < 10) {
+//       sum += arr[i];
+//     }
+//   }
+//   console.log(sum);
+// };
+// func([1, 4, 9, 10, -8, -19]);
+
+// №1
+// Дана строка:
+// 'abcde'
+// Получите массив букв этой строки.
+// const letters = 'abcde';
+// console.log(letters.split(''));
+
+// №2
+// Дано некоторое число:
+// 12345
+// Получите массив цифр этого числа.
+// const numbs = 12345;
+// console.log(numbs.toString().split(''));
+
+// №3
+// Дано некоторое число:
+// 12345
+// Переверните его:
+// 54321
+// const numb = 12345;
+// console.log(
+//   numb
+//     .toString()
+//     .split('')
+//     .toSorted((a, b) => b - a)
+//     .join('')
+// );
+
+// №4
+// Дано некоторое число:
+// 12345
+// Найдите сумму цифр этого числа.
+// const numb = 12345;
+// const arr = numb.toString().split('').map(Number);
+// let sum = 0;
+// for (let i = 0; i <= arr.length - 1; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// Заполните массив целыми числами от 1 до 10.
+// let arr = [];
+// for (let i = 1; i <= 10; i++) {
+//   arr.push(i);
+// }
+// console.log(arr);
+
+// Заполните массив четными числами из промежутка от 1 до 100.
+// let arr = [];
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     arr.push(i);
+//   }
+// }
+// console.log(arr);
+
+// Дан массив с дробями:
+// [1.456, 2.125, 3.32, 4.1, 5.34]
+// Округлите эти дроби до одного знака в дробной части.
+// const arr = [1.456, 2.125, 3.32, 4.1, 5.34];
+// let arr1 = [];
+// for (let i = 0; i < arr.length; i++) {
+//   arr1.push(arr[i].toFixed(1));
+// }
+// console.log(arr1);
+
+// Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://.
+// const arr = [
+//   'ghhjfkdjhgfdfghjklkjhg.html',
+//   'http://.dfghjkjhgfdfghjk',
+//   'fghjkjhgfcvbnm',
+// ];
+// const newArr = arr.filter(str => str.startsWith('http://'));
+// console.log(newArr);
+
+// Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html.
+// const arr = [
+//   'ghhjfkdjhgfdfghjklkjhg.html',
+//   'http://.dfghjkjhgfdfghjk',
+//   'fghjkjhgfcvbnm',
+// ];
+// const newArr = arr.filter(str => str.endsWith('.html'));
+// console.log(newArr);
+
+// Дан массив с числами.Увеличьте каждое число из массива на 10 процентов.
+// const arr = [10, 2, 3, 4, 5, 6, 7];
+// const newArr = arr.map(item => item * 1.1);
+// console.log(newArr);
+
+// Заполните массив случайными числами из промежутка от 1 до 100.
+const arr = [];
+console.log(arr.push(Math.random() * 100));
+
+// Дано некоторое число:
+// 12345
+// Выведите в консоль все его символы с конца.
+
+// Дан некоторый массив, например, вот такой:
+// [1, 2, 3, 4, 5, 6]
+// По очереди выведите в консоль подмассивы из двух элементов нашего массива:
+// [1, 2]
+// [3, 4]
+// [5, 6]
+
+// Даны два массива:
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// Слейте эти массивы в новый массив:
+// [1, 2, 3, 4, 5, 6]
