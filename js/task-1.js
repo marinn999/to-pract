@@ -2413,8 +2413,8 @@
 // console.log(newArr);
 
 // Заполните массив случайными числами из промежутка от 1 до 100.
-const arr = [];
-console.log(arr.push(Math.random() * 100));
+// const arr = [];
+// console.log(arr.push(Math.random() * 100));
 
 // Дано некоторое число:
 // 12345
